@@ -31,6 +31,7 @@ fun main(args: Array<String>) {
         println("a is : $a")
     }
 
+    //contain
     var array = arrayListOf<String>()
     array.add("aaa")
     array.add("bbb")

@@ -29,7 +29,7 @@ fun main(args: Array<String>) {
 
 }
 
-//类定义
+//类定义- 多构造呢?
 class Fucker(val name:String){
     fun fuck(){
         println("fuck $name")
