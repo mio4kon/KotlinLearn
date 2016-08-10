@@ -29,8 +29,29 @@ class Delegate {
     }
 }
 
+//延迟属性:数值只在第一次被访问的时候计算
+class SquareOnce(x: Int) {
+    val squareValue: Int by lazy() {
+        var date = caculate(x)
+        date
+    }
+}
+
+
+fun caculate(x: Int): Int {
+    println("Square....")
+    return x * x
+}
+
 fun main(args: Array<String>) {
     val e = Example()
     println(e.p)
     e.p = "NEW"
+
+    println("--------------------------")
+
+    var square = SquareOnce(2)
+    println(square.squareValue)
+    println(square.squareValue)
+
 }
